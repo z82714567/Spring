@@ -1,0 +1,642 @@
+2023-10-05T17:23:26.154+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:23:26.158+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:23:26.189+09:00  INFO 8008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T17:23:26.189+09:00  INFO 8008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T17:23:26.459+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:23:26.491+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:23:26.878+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:23:26.885+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:23:26.885+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:23:26.917+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:23:26.917+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 727 ms
+2023-10-05T17:23:26.990+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:23:27.013+09:00  INFO 8008 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-05T17:23:27.014+09:00  INFO 8008 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-05T17:23:27.077+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:23:27.140+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:23:27.148+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-05T17:23:27.439+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@546349c0
+2023-10-05T17:23:27.442+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-05T17:23:27.505+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:23:27.618+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:23:27.964+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:23:28.242+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:23:28.432+09:00  INFO 8008 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-05T17:23:28.606+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:23:28.669+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:23:28.797+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:23:28.816+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:23:28.820+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 2.845 seconds (process running for 3.196)
+2023-10-05T17:23:41.230+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:23:41.230+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:23:41.231+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:36:19.474+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (1 addition, 0 deletions, 3 modifications)
+2023-10-05T17:36:19.482+09:00  INFO 8008 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:36:19.483+09:00  INFO 8008 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:36:19.488+09:00  INFO 8008 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:36:19.493+09:00  INFO 8008 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-05T17:36:19.604+09:00  INFO 8008 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-05T17:36:19.652+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:36:19.653+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:36:19.725+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:36:19.732+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:36:19.774+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:36:19.774+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:36:19.774+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:36:19.780+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:36:19.780+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 126 ms
+2023-10-05T17:36:19.798+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:36:19.801+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:36:19.802+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:36:19.802+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-10-05T17:36:19.913+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a6fa580
+2023-10-05T17:36:19.914+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-10-05T17:36:19.914+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:36:19.921+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:36:19.947+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:36:20.125+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:36:20.237+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:36:20.255+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:36:20.316+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:36:20.321+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:36:20.323+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.683 seconds (process running for 774.699)
+2023-10-05T17:36:20.324+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:36:51.171+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:36:51.172+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:36:51.173+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:39:11.477+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:39:11.484+09:00  INFO 8008 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:39:11.485+09:00  INFO 8008 --- [Thread-7] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:39:11.488+09:00  INFO 8008 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:39:11.489+09:00  INFO 8008 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-10-05T17:39:11.598+09:00  INFO 8008 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-10-05T17:39:11.645+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:39:11.646+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:39:11.702+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:39:11.708+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:39:11.742+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:39:11.742+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:39:11.742+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:39:11.751+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:39:11.752+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 105 ms
+2023-10-05T17:39:11.765+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:39:11.768+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:39:11.768+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:39:11.768+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-10-05T17:39:11.883+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39dfe180
+2023-10-05T17:39:11.883+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-10-05T17:39:11.884+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:39:11.894+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:39:11.921+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:39:12.091+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:39:12.151+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:39:12.164+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:39:12.213+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:39:12.218+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:39:12.220+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.583 seconds (process running for 946.595)
+2023-10-05T17:39:12.220+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:39:16.198+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:39:16.199+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:39:16.200+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:39:55.783+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:39:55.788+09:00  INFO 8008 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:39:55.788+09:00  INFO 8008 --- [Thread-11] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:39:55.789+09:00  INFO 8008 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:39:55.790+09:00  INFO 8008 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-10-05T17:39:55.896+09:00  INFO 8008 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-10-05T17:39:55.937+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:39:55.937+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:39:55.992+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:39:55.998+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:39:56.027+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:39:56.028+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:39:56.028+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:39:56.035+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:39:56.035+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 97 ms
+2023-10-05T17:39:56.047+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:39:56.050+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:39:56.050+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:39:56.051+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-10-05T17:39:56.166+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@243b3c12
+2023-10-05T17:39:56.166+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-10-05T17:39:56.167+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:39:56.180+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:39:56.210+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:39:56.385+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:39:56.449+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:39:56.462+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:39:56.512+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:39:56.517+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:39:56.519+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.593 seconds (process running for 990.894)
+2023-10-05T17:39:56.520+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:39:56.658+09:00  INFO 8008 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:39:56.658+09:00  INFO 8008 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:39:56.658+09:00  INFO 8008 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-05T17:40:16.458+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:40:16.466+09:00  INFO 8008 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:40:16.467+09:00  INFO 8008 --- [Thread-15] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:40:16.469+09:00  INFO 8008 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:40:16.470+09:00  INFO 8008 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-10-05T17:40:16.585+09:00  INFO 8008 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-10-05T17:40:16.623+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:40:16.623+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:40:16.677+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:40:16.682+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:40:16.712+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:40:16.713+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:40:16.713+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:40:16.719+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:40:16.719+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 95 ms
+2023-10-05T17:40:16.732+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:40:16.734+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:40:16.734+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:40:16.735+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-10-05T17:40:16.843+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ce23541
+2023-10-05T17:40:16.843+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-10-05T17:40:16.843+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:40:16.850+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:40:16.868+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:40:17.033+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:40:17.105+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:40:17.121+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:40:17.168+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:40:17.173+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:40:17.175+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.561 seconds (process running for 1011.551)
+2023-10-05T17:40:17.175+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:40:17.180+09:00  INFO 8008 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:40:17.181+09:00  INFO 8008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:40:17.181+09:00  INFO 8008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-05T17:40:38.156+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:40:38.162+09:00  INFO 8008 --- [Thread-19] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:40:38.162+09:00  INFO 8008 --- [Thread-19] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:40:38.166+09:00  INFO 8008 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:40:38.167+09:00  INFO 8008 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-10-05T17:40:38.277+09:00  INFO 8008 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-10-05T17:40:38.318+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:40:38.318+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:40:38.371+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:40:38.377+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:40:38.408+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:40:38.408+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:40:38.408+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:40:38.416+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:40:38.416+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 98 ms
+2023-10-05T17:40:38.429+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:40:38.431+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:40:38.431+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:40:38.432+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-10-05T17:40:38.543+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46b3c2ef
+2023-10-05T17:40:38.543+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-10-05T17:40:38.545+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:40:38.567+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:40:38.585+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:40:38.749+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:40:38.805+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:40:38.819+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:40:38.869+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:40:38.873+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:40:38.875+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.566 seconds (process running for 1033.251)
+2023-10-05T17:40:38.876+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:40:38.906+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:40:38.906+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:40:38.907+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:41:14.188+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:41:14.197+09:00  INFO 8008 --- [Thread-23] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:41:14.197+09:00  INFO 8008 --- [Thread-23] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:41:14.200+09:00  INFO 8008 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:41:14.200+09:00  INFO 8008 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-10-05T17:41:14.306+09:00  INFO 8008 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-10-05T17:41:14.342+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:41:14.342+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:41:14.394+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:41:14.400+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:41:14.429+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:41:14.429+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:41:14.429+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:41:14.448+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:41:14.448+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 106 ms
+2023-10-05T17:41:14.461+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:41:14.464+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:41:14.464+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:41:14.464+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-10-05T17:41:14.576+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ccc8fe7
+2023-10-05T17:41:14.576+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-10-05T17:41:14.577+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:41:14.590+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:41:14.610+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:41:14.789+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:41:14.857+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:41:14.870+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:41:14.918+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:41:14.922+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:41:14.924+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.591 seconds (process running for 1069.3)
+2023-10-05T17:41:14.925+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:41:15.635+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:41:15.635+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:41:15.636+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:47:06.747+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:47:06.754+09:00  INFO 8008 --- [Thread-27] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:47:06.755+09:00  INFO 8008 --- [Thread-27] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:47:06.757+09:00  INFO 8008 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:47:06.757+09:00  INFO 8008 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-10-05T17:47:06.863+09:00  INFO 8008 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-10-05T17:47:06.904+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:47:06.904+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:47:06.957+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:47:06.962+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:47:06.991+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:47:06.991+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:47:06.991+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:47:06.997+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:47:06.997+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 92 ms
+2023-10-05T17:47:07.009+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:47:07.011+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:47:07.012+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:47:07.012+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2023-10-05T17:47:07.123+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6df6da67
+2023-10-05T17:47:07.124+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2023-10-05T17:47:07.125+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:47:07.142+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:47:07.167+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:47:07.331+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:47:07.387+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:47:07.400+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:47:07.449+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:47:07.454+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:47:07.456+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.56 seconds (process running for 1421.831)
+2023-10-05T17:47:07.456+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:47:10.045+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:47:10.045+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:47:10.046+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:47:36.359+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:47:36.365+09:00  INFO 8008 --- [Thread-31] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:47:36.365+09:00  INFO 8008 --- [Thread-31] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:47:36.368+09:00  INFO 8008 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:47:36.368+09:00  INFO 8008 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2023-10-05T17:47:36.473+09:00  INFO 8008 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2023-10-05T17:47:36.514+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:47:36.514+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:47:36.566+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:47:36.572+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:47:36.600+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:47:36.600+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:47:36.600+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:47:36.606+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:47:36.606+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 91 ms
+2023-10-05T17:47:36.618+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:47:36.620+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:47:36.620+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:47:36.620+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2023-10-05T17:47:36.733+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@133a06d
+2023-10-05T17:47:36.733+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2023-10-05T17:47:36.733+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:47:36.739+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:47:36.755+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:47:36.918+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:47:36.977+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:47:36.989+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:47:37.036+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:47:37.041+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:47:37.043+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.538 seconds (process running for 1451.419)
+2023-10-05T17:47:37.044+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:47:38.382+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:47:38.382+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:47:38.383+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:48:02.076+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:48:02.085+09:00  INFO 8008 --- [Thread-35] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:48:02.085+09:00  INFO 8008 --- [Thread-35] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:48:02.088+09:00  INFO 8008 --- [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:48:02.088+09:00  INFO 8008 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2023-10-05T17:48:02.194+09:00  INFO 8008 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2023-10-05T17:48:02.239+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:48:02.239+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:48:02.291+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:48:02.297+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:48:02.324+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:48:02.325+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:48:02.325+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:48:02.331+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:48:02.331+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 91 ms
+2023-10-05T17:48:02.343+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:48:02.346+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:48:02.346+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:48:02.346+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2023-10-05T17:48:02.457+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77e3cc4a
+2023-10-05T17:48:02.457+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2023-10-05T17:48:02.457+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:48:02.463+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:48:02.478+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:48:02.650+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:48:02.702+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:48:02.714+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:48:02.760+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:48:02.765+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:48:02.767+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.537 seconds (process running for 1477.143)
+2023-10-05T17:48:02.767+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:48:04.458+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:48:04.458+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:48:04.459+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:48:15.479+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:48:15.487+09:00  INFO 8008 --- [Thread-39] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:48:15.487+09:00  INFO 8008 --- [Thread-39] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:48:15.491+09:00  INFO 8008 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:48:15.491+09:00  INFO 8008 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2023-10-05T17:48:15.600+09:00  INFO 8008 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2023-10-05T17:48:15.641+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:48:15.641+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:48:15.693+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:48:15.698+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:48:15.726+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:48:15.726+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:48:15.726+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:48:15.732+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:48:15.732+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 90 ms
+2023-10-05T17:48:15.745+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:48:15.747+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:48:15.747+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:48:15.747+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2023-10-05T17:48:15.861+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77191683
+2023-10-05T17:48:15.861+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2023-10-05T17:48:15.862+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:48:15.868+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:48:15.884+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:48:16.050+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:48:16.112+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:48:16.125+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:48:16.174+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:48:16.178+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:48:16.180+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.547 seconds (process running for 1490.555)
+2023-10-05T17:48:16.181+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:48:17.523+09:00  INFO 8008 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:48:17.523+09:00  INFO 8008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:48:17.524+09:00  INFO 8008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:48:42.295+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:48:42.302+09:00  INFO 8008 --- [Thread-43] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:48:42.302+09:00  INFO 8008 --- [Thread-43] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:48:42.305+09:00  INFO 8008 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:48:42.305+09:00  INFO 8008 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2023-10-05T17:48:42.412+09:00  INFO 8008 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2023-10-05T17:48:42.453+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:48:42.453+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:48:42.505+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:48:42.511+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:48:42.539+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:48:42.539+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:48:42.539+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:48:42.545+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:48:42.545+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 91 ms
+2023-10-05T17:48:42.558+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:48:42.561+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:48:42.561+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:48:42.561+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2023-10-05T17:48:42.671+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21c4f8cd
+2023-10-05T17:48:42.671+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2023-10-05T17:48:42.672+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:48:42.679+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:48:42.695+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:48:42.858+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:48:42.912+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:48:42.925+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:48:42.972+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:48:42.977+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:48:42.979+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.533 seconds (process running for 1517.354)
+2023-10-05T17:48:42.979+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:48:43.052+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:48:43.052+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:48:43.053+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:48:51.574+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:48:51.582+09:00  INFO 8008 --- [Thread-47] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:48:51.582+09:00  INFO 8008 --- [Thread-47] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:48:51.586+09:00  INFO 8008 --- [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:48:51.586+09:00  INFO 8008 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2023-10-05T17:48:51.696+09:00  INFO 8008 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2023-10-05T17:48:51.736+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:48:51.736+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:48:51.787+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:48:51.793+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:48:51.820+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:48:51.821+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:48:51.821+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:48:51.826+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:48:51.826+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 89 ms
+2023-10-05T17:48:51.839+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:48:51.842+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:48:51.842+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:48:51.842+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2023-10-05T17:48:51.953+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76972e8c
+2023-10-05T17:48:51.953+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2023-10-05T17:48:51.953+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:48:51.958+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:48:51.975+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:48:52.145+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:48:52.202+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:48:52.215+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:48:52.261+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:48:52.265+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:48:52.267+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.538 seconds (process running for 1526.642)
+2023-10-05T17:48:52.268+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:48:52.453+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:48:52.453+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:48:52.454+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:49:56.381+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:49:56.391+09:00  INFO 8008 --- [Thread-51] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:49:56.391+09:00  INFO 8008 --- [Thread-51] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:49:56.394+09:00  INFO 8008 --- [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:49:56.394+09:00  INFO 8008 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2023-10-05T17:49:56.502+09:00  INFO 8008 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2023-10-05T17:49:56.549+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:49:56.549+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:49:56.604+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:49:56.609+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:49:56.637+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:49:56.637+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:49:56.637+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:49:56.643+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:49:56.643+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 94 ms
+2023-10-05T17:49:56.655+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:49:56.657+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:49:56.657+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:49:56.658+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2023-10-05T17:49:56.770+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3921626
+2023-10-05T17:49:56.770+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2023-10-05T17:49:56.771+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:49:56.780+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:49:56.798+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:49:56.964+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:49:57.019+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:49:57.033+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:49:57.081+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:49:57.086+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:49:57.087+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.546 seconds (process running for 1591.463)
+2023-10-05T17:49:57.088+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:49:57.467+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:49:57.467+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:49:57.468+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:51:43.312+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:51:43.318+09:00  INFO 8008 --- [Thread-55] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:51:43.318+09:00  INFO 8008 --- [Thread-55] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:51:43.320+09:00  INFO 8008 --- [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:51:43.321+09:00  INFO 8008 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2023-10-05T17:51:43.428+09:00  INFO 8008 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2023-10-05T17:51:43.468+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:51:43.468+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:51:43.517+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:51:43.522+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:51:43.549+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:51:43.549+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:51:43.549+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:51:43.554+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:51:43.554+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 85 ms
+2023-10-05T17:51:43.566+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:51:43.568+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:51:43.569+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:51:43.569+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2023-10-05T17:51:43.683+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b535a35
+2023-10-05T17:51:43.683+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2023-10-05T17:51:43.684+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:51:43.695+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:51:43.714+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:51:43.883+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:51:43.942+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:51:43.954+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:51:43.998+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:51:44.003+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:51:44.005+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.545 seconds (process running for 1698.38)
+2023-10-05T17:51:44.005+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:51:55.689+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:51:55.698+09:00  INFO 8008 --- [Thread-59] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:51:55.700+09:00  INFO 8008 --- [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:51:55.701+09:00  INFO 8008 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2023-10-05T17:51:55.808+09:00  INFO 8008 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2023-10-05T17:51:55.849+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:51:55.849+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:51:55.900+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:51:55.906+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:51:55.933+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:51:55.933+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:51:55.933+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:51:55.939+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:51:55.939+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 89 ms
+2023-10-05T17:51:55.952+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:51:55.955+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:51:55.955+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:51:55.955+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2023-10-05T17:51:56.067+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a2b37b0
+2023-10-05T17:51:56.067+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2023-10-05T17:51:56.067+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:51:56.072+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:51:56.088+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:51:56.252+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:51:56.309+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:51:56.323+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:51:56.370+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:51:56.374+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:51:56.376+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.536 seconds (process running for 1710.752)
+2023-10-05T17:51:56.376+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:51:56.769+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:51:56.769+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:51:56.770+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:53:27.261+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:53:27.269+09:00  INFO 8008 --- [Thread-63] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:53:27.270+09:00  INFO 8008 --- [Thread-63] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:53:27.272+09:00  INFO 8008 --- [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:53:27.272+09:00  INFO 8008 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2023-10-05T17:53:27.379+09:00  INFO 8008 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2023-10-05T17:53:27.423+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:53:27.423+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:53:27.479+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:53:27.486+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:53:27.521+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:53:27.521+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:53:27.521+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:53:27.527+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:53:27.527+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 103 ms
+2023-10-05T17:53:27.542+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:53:27.544+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:53:27.544+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:53:27.545+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2023-10-05T17:53:27.653+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@340892a6
+2023-10-05T17:53:27.653+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2023-10-05T17:53:27.654+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:53:27.658+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:53:27.672+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:53:27.838+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:53:27.893+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:53:27.908+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:53:27.962+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:53:27.967+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:53:27.969+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.557 seconds (process running for 1802.344)
+2023-10-05T17:53:27.969+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:53:27.979+09:00  INFO 8008 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:53:27.979+09:00  INFO 8008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:53:27.979+09:00  INFO 8008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-05T17:53:37.603+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:53:37.608+09:00  INFO 8008 --- [Thread-67] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:53:37.608+09:00  INFO 8008 --- [Thread-67] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:53:37.611+09:00  INFO 8008 --- [Thread-67] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:53:37.612+09:00  INFO 8008 --- [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2023-10-05T17:53:37.717+09:00  INFO 8008 --- [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2023-10-05T17:53:37.757+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:53:37.758+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:53:37.807+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:53:37.812+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:53:37.840+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:53:37.840+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:53:37.840+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:53:37.846+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:53:37.846+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 88 ms
+2023-10-05T17:53:37.858+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:53:37.861+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:53:37.861+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:53:37.861+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2023-10-05T17:53:37.972+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7336dfad
+2023-10-05T17:53:37.972+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2023-10-05T17:53:37.972+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:53:37.977+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:53:37.996+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:53:38.170+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:53:38.242+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:53:38.254+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:53:38.299+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:53:38.304+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:53:38.305+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.555 seconds (process running for 1812.681)
+2023-10-05T17:53:38.306+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:53:39.207+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T17:53:39.207+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T17:53:39.208+09:00  INFO 8008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T17:56:53.823+09:00  INFO 8008 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T17:56:53.829+09:00  INFO 8008 --- [Thread-71] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:56:53.829+09:00  INFO 8008 --- [Thread-71] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T17:56:53.832+09:00  INFO 8008 --- [Thread-71] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:56:53.832+09:00  INFO 8008 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2023-10-05T17:56:53.941+09:00  INFO 8008 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2023-10-05T17:56:53.987+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 8008 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch08\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch08)
+2023-10-05T17:56:53.987+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T17:56:54.037+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T17:56:54.043+09:00  INFO 8008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2023-10-05T17:56:54.069+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T17:56:54.069+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T17:56:54.070+09:00  INFO 8008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T17:56:54.075+09:00  INFO 8008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T17:56:54.075+09:00  INFO 8008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 87 ms
+2023-10-05T17:56:54.087+09:00  INFO 8008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T17:56:54.090+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:56:54.090+09:00  INFO 8008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T17:56:54.090+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2023-10-05T17:56:54.205+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e273e9
+2023-10-05T17:56:54.206+09:00  INFO 8008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2023-10-05T17:56:54.207+09:00  WARN 8008 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-05T17:56:54.216+09:00  INFO 8008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T17:56:54.230+09:00  INFO 8008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T17:56:54.396+09:00  INFO 8008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:56:54.460+09:00  WARN 8008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T17:56:54.474+09:00  INFO 8008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-05T17:56:54.521+09:00  INFO 8008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T17:56:54.526+09:00  INFO 8008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-05T17:56:54.528+09:00  INFO 8008 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.551 seconds (process running for 2008.903)
+2023-10-05T17:56:54.528+09:00  INFO 8008 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T17:56:55.328+09:00  INFO 8008 --- [RMI TCP Connection(37)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-10-05T17:56:55.332+09:00  INFO 8008 --- [RMI TCP Connection(37)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T17:56:55.334+09:00  INFO 8008 --- [RMI TCP Connection(37)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T17:56:55.335+09:00  INFO 8008 --- [RMI TCP Connection(37)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2023-10-05T17:56:55.441+09:00  INFO 8008 --- [RMI TCP Connection(37)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
