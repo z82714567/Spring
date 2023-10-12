@@ -48,8 +48,8 @@ public class SecurityConfiguration {
 
 			// 인가 권한 설정
 			.authorizeHttpRequests(authorizeHttpRequests -> authorizeHttpRequests
-									.requestMatchers("/admin/**").hasAuthority("ADMIN")
-									.requestMatchers("/manager/**").hasAnyAuthority("ADMIN", "MANAGER")
+									.requestMatchers("/admin/**").hasRole("ADMIN")
+									.requestMatchers("/article/**").hasAnyRole("ADMIN", "MANAGER", "USER")
 									.requestMatchers("/user/**").permitAll()
 									.requestMatchers("/").authenticated()
 									.requestMatchers("/vendor/**", "/js/**", "/dist/**", "/data/**", "/less/**").permitAll());

@@ -32,7 +32,7 @@ spring:
     jpa:
         database: mysql
         hibernate:
-            ddl-auto: 'update '
+            ddl-auto: none
             naming:
                 physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
         properties:
@@ -47,3 +47,9 @@ spring:
     thymeleaf:
         cache: false
         prefix: file:src/main/resources/templates/
+
+    servlet:
+        multipart:
+            location: src/main/resources/static/file/
+            max-file-size: 10MB
+
