@@ -46,7 +46,10 @@ spring:
             password: 1234
     thymeleaf:
         cache: false
-        prefix: file:src/main/resources/templates/
+        #prefix 설정을 안하면 HTML 수정 후 브라우저에서 새고로침 반영 안돼
+        #그리고 반드시 classpath 경로로 쓰고 templates 마지막 / (controller return 주소가 뒤에 붙음)붙이면 배포파일 실행 안돼
+        prefix: classpath:/templates
+        #prefix: file:src/main/resources/templates/
 
     servlet:
         multipart:
