@@ -7,12 +7,13 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "USER1")
+@Table(name="User1")
 public class User1Entity {
-
+	
 	@Id
-	private String id;
+	private String uid;
 	private String name;
 	private String hp;
 	private int age;
+	
 }

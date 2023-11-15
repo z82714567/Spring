@@ -51,7 +51,7 @@ public class JwtProvider {
 		
 		// 발급일, 만료일 생성
 		Date issuedDate = new Date();
-		Date expireDate = new Date(issuedDate.getTime() + Duration.ofDays(days).toMillis());
+		Date expireDate = new Date(issuedDate.getTime() + Duration.ofMinutes(days).toMillis());
 		
 		// 클레임 생성
 		Claims claims = Jwts.claims();
@@ -98,15 +98,25 @@ public class JwtProvider {
 			
 		}catch (SecurityException | MalformedJwtException e) {
 			log.debug("잘못된 JWT 서명입니다.");
-		}catch (ExpiredJwtException e) {
+			//throw new MalformedJwtException("잘못된 JWT 서명입니다.", e);
+			throw new JwtCustomException(JwtCustomException.JWT_ERROR.MALFORM);
+			
+		}catch (ExpiredJwtException e) {			
 			log.debug("만료된 JWT 토큰입니다.");
+			//throw new ExpiredJwtException(null, null, "만료된 JWT 토큰입니다.", e);
+			throw new JwtCustomException(JwtCustomException.JWT_ERROR.EXPIRED);
+			
 		}catch (UnsupportedJwtException e) {
 			log.debug("지원되지 않는 JWT 토큰입니다.");
+			//throw new UnsupportedJwtException("지원되지 않는 JWT 토큰입니다.", e);
+			throw new JwtCustomException(JwtCustomException.JWT_ERROR.BADTYPE);
+			
 		}catch (IllegalArgumentException e) {
 			log.debug("JWT 토큰이 잘못되었습니다.");
+			//throw new IllegalArgumentException("JWT 토큰이 잘못되었습니다.", e);
+			throw new JwtCustomException(JwtCustomException.JWT_ERROR.BADSIGN);
 		}
 		
-		return false;
 	}
 	
 	public Claims getClaims(String token){

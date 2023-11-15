@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import kr.ch10.entity.User2Entity;
 
 @Repository
-public interface User2Repository extends JpaRepository<User2Entity, String>{
+public interface User2Repository extends JpaRepository<User2Entity, String> {
 
 }
