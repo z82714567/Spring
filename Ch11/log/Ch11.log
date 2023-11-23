@@ -3008,3 +3008,60 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 2023-11-15T18:17:01.024+09:00  INFO 4940 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-11-15T18:17:01.025+09:00  INFO 4940 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-11-15T18:17:01.125+09:00  INFO 4940 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-15T18:17:01.165+09:00  INFO 4940 --- [restartedMain] kr.ch11.Ch11Application                  : Starting Ch11Application using Java 17.0.8.1 with PID 4940 (C:\Users\JAVA\Desktop\Workspace\Spring\Ch11\target\classes started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\Ch11)
+2023-11-15T18:17:01.166+09:00  INFO 4940 --- [restartedMain] kr.ch11.Ch11Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-11-15T18:17:01.237+09:00  INFO 4940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-15T18:17:01.241+09:00  INFO 4940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-11-15T18:17:01.291+09:00  INFO 4940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-15T18:17:01.291+09:00  INFO 4940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-15T18:17:01.291+09:00  INFO 4940 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-11-15T18:17:01.301+09:00  INFO 4940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-15T18:17:01.302+09:00  INFO 4940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 134 ms
+2023-11-15T18:17:01.325+09:00  INFO 4940 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-15T18:17:01.329+09:00  INFO 4940 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-15T18:17:01.329+09:00  INFO 4940 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-15T18:17:01.330+09:00  INFO 4940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-11-15T18:17:01.443+09:00  INFO 4940 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@133008cf
+2023-11-15T18:17:01.444+09:00  INFO 4940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-11-15T18:17:01.444+09:00  WARN 4940 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-11-15T18:17:01.448+09:00  INFO 4940 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-15T18:17:01.459+09:00  INFO 4940 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-15T18:17:01.486+09:00  INFO 4940 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-15T18:17:01.522+09:00  WARN 4940 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-15T18:17:01.529+09:00  INFO 4940 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-15T18:17:01.553+09:00  INFO 4940 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@292d2c2e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62104ea0, org.springframework.security.web.context.SecurityContextHolderFilter@60ac6b9a, org.springframework.security.web.header.HeaderWriterFilter@186d668c, org.springframework.web.filter.CorsFilter@2af038a0, org.springframework.security.web.authentication.logout.LogoutFilter@1d8d6bcb, kr.ch11.jwt.JwtAuthenticationFilter@38284677, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ec7cd75, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ded9f27, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b1ebc03, org.springframework.security.web.session.SessionManagementFilter@64b6f157, org.springframework.security.web.access.ExceptionTranslationFilter@6d5c6735, org.springframework.security.web.access.intercept.AuthorizationFilter@33000b9]
+2023-11-15T18:17:01.581+09:00  INFO 4940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-15T18:17:01.589+09:00  INFO 4940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-15T18:17:01.591+09:00  INFO 4940 --- [restartedMain] kr.ch11.Ch11Application                  : Started Ch11Application in 0.438 seconds (process running for 947.617)
+2023-11-15T18:17:01.592+09:00  INFO 4940 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-11-15T18:17:11.112+09:00  INFO 4940 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-15T18:17:11.112+09:00  INFO 4940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-15T18:17:11.112+09:00  INFO 4940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-15T18:17:11.112+09:00 DEBUG 4940 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /users
+2023-11-15T18:17:11.114+09:00 DEBUG 4940 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /users
+2023-11-15T18:17:11.115+09:00  INFO 4940 --- [http-nio-8080-exec-2] kr.ch11.jwt.JwtAuthenticationFilter      : JwtAuthenticationFilter...1 : /users
+2023-11-15T18:17:11.115+09:00  INFO 4940 --- [http-nio-8080-exec-2] kr.ch11.jwt.JwtAuthenticationFilter      : JwtAuthenticationFilter...2 : Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ6ODI3MTQ1NjdAZ21haWwuY29tIiwiaWF0IjoxNzAwMDM5NjIzLCJleHAiOjE3MDAwMzk4MDMsInVpZCI6ImExMDIiLCJyb2xlIjoiVVNFUiJ9.-Eu3STBZ9SLEQ7qTVV9Ai1M35Jt4FB4EcASMpYQRW-Q
+2023-11-15T18:17:11.115+09:00  INFO 4940 --- [http-nio-8080-exec-2] kr.ch11.jwt.JwtAuthenticationFilter      : JwtAuthenticationFilter...3 : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ6ODI3MTQ1NjdAZ21haWwuY29tIiwiaWF0IjoxNzAwMDM5NjIzLCJleHAiOjE3MDAwMzk4MDMsInVpZCI6ImExMDIiLCJyb2xlIjoiVVNFUiJ9.-Eu3STBZ9SLEQ7qTVV9Ai1M35Jt4FB4EcASMpYQRW-Q
+2023-11-15T18:17:11.117+09:00  INFO 4940 --- [http-nio-8080-exec-2] kr.ch11.jwt.JwtAuthenticationFilter      : JwtAuthenticationFilter...6 : 404
+2023-11-15T18:17:11.117+09:00  INFO 4940 --- [http-nio-8080-exec-2] kr.ch11.jwt.JwtAuthenticationFilter      : JwtAuthenticationFilter...7 : JWT Expired
+2023-11-15T18:17:11.121+09:00 DEBUG 4940 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /Ch11/refreshToken
+2023-11-15T18:17:11.122+09:00 DEBUG 4940 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /Ch11/refreshToken
+2023-11-15T18:17:11.122+09:00  INFO 4940 --- [http-nio-8080-exec-4] kr.ch11.jwt.JwtAuthenticationFilter      : JwtAuthenticationFilter...1 : /refreshToken
+2023-11-15T18:17:11.122+09:00  INFO 4940 --- [http-nio-8080-exec-4] kr.ch11.jwt.JwtAuthenticationFilter      : JwtAuthenticationFilter...2 : Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ6ODI3MTQ1NjdAZ21haWwuY29tIiwiaWF0IjoxNzAwMDM5NjIzLCJleHAiOjE3MDAwNDAyMjMsInVpZCI6ImExMDIiLCJyb2xlIjoiVVNFUiJ9.W_zWEP6pxH7vZA6F4-XsyRoGW5ztM9dtzGATS_Uhmr8
+2023-11-15T18:17:11.123+09:00  INFO 4940 --- [http-nio-8080-exec-4] kr.ch11.jwt.JwtAuthenticationFilter      : JwtAuthenticationFilter...3 : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ6ODI3MTQ1NjdAZ21haWwuY29tIiwiaWF0IjoxNzAwMDM5NjIzLCJleHAiOjE3MDAwNDAyMjMsInVpZCI6ImExMDIiLCJyb2xlIjoiVVNFUiJ9.W_zWEP6pxH7vZA6F4-XsyRoGW5ztM9dtzGATS_Uhmr8
+2023-11-15T18:23:46.881+09:00  INFO 4940 --- [RMI TCP Connection(26)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-11-15T18:23:46.884+09:00  INFO 4940 --- [RMI TCP Connection(26)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-15T18:23:46.884+09:00  INFO 4940 --- [RMI TCP Connection(26)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-15T18:23:46.885+09:00  WARN 4940 --- [RMI TCP Connection(26)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+2023-11-15T18:23:46.887+09:00  INFO 4940 --- [RMI TCP Connection(26)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-15T18:23:46.887+09:00  INFO 4940 --- [RMI TCP Connection(26)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-11-15T18:23:46.990+09:00  INFO 4940 --- [RMI TCP Connection(26)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
