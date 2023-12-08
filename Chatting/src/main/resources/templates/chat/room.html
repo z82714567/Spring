@@ -1,0 +1,100 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Websocket Chat</title>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+		window.onload = function(){
+			
+			findAllRoom();
+			
+			const chatList = document.getElementById('chat-list');			
+			const btnCreateRoom = document.getElementById('createRoom');
+			 
+			btnCreateRoom.addEventListener('click', function(){
+				
+				const room_name = document.getElementById('room_name');
+				
+				console.log('room_name : ' + room_name.value);
+				
+		        if(room_name.value === "") {
+		            alert("방 제목을 입력해 주십시요.");
+		            return;
+		        } else {
+		            axios.post('/chat/room', {'name': room_name.value})
+		                .then(response => {
+		                        alert(response.data.roomName+"방 개설에 성공하였습니다.")
+		                        findAllRoom();
+		                    }
+		                ).catch(response => { 
+							alert("채팅방 개설에 실패하였습니다.");
+						});
+		                
+		        }
+			});
+			
+			
+			function findAllRoom() {
+				
+				//alert('start!');
+				
+		        axios
+		        	.get('/chat/rooms')
+		        	.then(response => {
+						//this.chatrooms = response.data;
+						chatList.innerHTML = "";
+						 
+						for(let data of response.data){
+							console.log('for data : ' + JSON.stringify(data));
+							console.log('for data : ' + JSON.stringify(data.roomName));
+							
+							/*
+					        const li = document.createElement('li');
+					        li.appendChild(document.createTextNode(data.roomName));
+					        chatList.appendChild(li);
+					        */
+					        
+					        const node = `<li>
+											${data.roomName}
+											<button data-room="${data.roomId}" class="btnRoom">입장하기</button>
+										  </li>`;
+										  					        					        
+					        chatList.insertAdjacentHTML('beforeend', node);
+					        
+						}
+					});
+		    }
+		    
+		    
+		    document.addEventListener('click', function(e){
+				
+				const target = e.target.closest('.btnRoom');
+				
+				if(target){
+					const roomId = target.getAttribute('data-room');
+					
+					var sender = prompt('대화명을 입력해 주세요.');
+		        
+			        if(sender !== "") {
+			            localStorage.setItem('wschat.sender',sender);
+			            localStorage.setItem('wschat.roomId',roomId);
+			            location.href="/chat/room/enter/"+roomId;
+			        }
+				}
+				
+			});
+		    
+			
+		};
+	</script>
+</head>
+<body>
+    <h3>채팅방 리스트</h3>
+    <div>
+        <label>방제목 : <input type="text" id="room_name"/></label>
+        <button id="createRoom" type="button">채팅방 개설</button>        
+    </div>
+    <ul id="chat-list"></ul>
+
+</body>
+</html>

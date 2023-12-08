@@ -1,0 +1,85 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Websocket ChatRoom</title>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1.5.1/dist/sockjs.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+	<script>
+		window.onload = function(){
+			
+            const roomId = localStorage.getItem('wschat.roomId');
+            const sender = localStorage.getItem('wschat.sender');
+            
+            const roomName = document.getElementById('roomName');
+            
+            findRoom();
+			
+			function findRoom() {
+                axios
+                	.get('/chat/room/'+roomId)
+                	.then(response => { 
+						roomName.innerText = response.data.roomName; 
+					});
+            }
+            
+            function showMessage(message) {
+		        var ul = document.getElementById('chat-messages');
+		        //var li = document.createElement('li');
+		        //li.appendChild(document.createTextNode(message));
+		        
+		        const node = `<li>${message}</li>`;
+		        ul.insertAdjacentHTML('beforeend', node);
+		        //ul.appendChild(li);
+		    }
+            
+            var stompClient = null;
+            
+            function sendMessage() {
+				
+				const messageInput = document.getElementById('message');
+        		const message = messageInput.value;
+				
+				console.log('roomId : ' + this.roomId);
+				console.log('sender : ' + this.sender);
+				console.log('message : ' + message);
+				
+                stompClient.send("/app/chat/message", {}, JSON.stringify({type:'TALK', roomId: roomId, sender: sender, message: message}));
+                this.message = '';
+            }
+
+		    function connect() {
+		        var socket = new SockJS('/ws/chat');
+		        stompClient = Stomp.over(socket);
+		        stompClient.connect({}, function (frame) {
+		            console.log('Connected: ' + frame);
+		            stompClient.subscribe("/topic/chat/room/" + roomId, function (message) {						
+		                showMessage(JSON.parse(message.body).message);		                
+		            });		            
+		            stompClient.send("/app/chat/message", {}, JSON.stringify({type:'ENTER', roomId: roomId, sender: sender}));
+		        });
+		    }
+		    
+			connect();
+			
+			const btnSend = document.getElementById('btnSend');
+			btnSend.addEventListener('click', function(){
+				sendMessage();
+			});
+		};
+	</script>
+</head>
+<body>
+<div>
+    <button onclick="location.href=`/chat/room`">돌아가기</button>
+</div>
+<div>
+	<h3 id="roomName"></h3>
+    <div>
+        <input type="text" id="message" placeholder="내용 입력">        
+        <button type="button" id="btnSend">전송</button>
+    </div>
+    <ul id="chat-messages"></ul>
+</div>
+</body>
+</html>

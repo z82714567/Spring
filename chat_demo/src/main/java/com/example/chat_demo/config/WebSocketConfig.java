@@ -1,6 +1,6 @@
 package com.example.chat_demo.config;
 
-import com.example.chat_demo.handler.ChatHandler;
+import com.example.chat_demo.handler.WebsocketHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
@@ -12,11 +12,11 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 @EnableWebSocket
 public class WebSocketConfig implements WebSocketConfigurer {
 
-    private final ChatHandler chatHandler;
+    private final WebsocketHandler websocketHandler;
 
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
 
-        registry.addHandler(chatHandler, "ws/chat").setAllowedOrigins("*");
+        registry.addHandler(websocketHandler, "ws/chat").setAllowedOrigins("*");
     }
 }

@@ -1,0 +1,32 @@
+2023-11-27T15:50:58.548+09:00  INFO 17088 --- [restartedMain] c.example.chat_demo.ChatDemoApplication  : Starting ChatDemoApplication using Java 17.0.8 with PID 17088 (C:\Users\JAVA\Desktop\Workspace\Spring\chat_demo\build\classes\java\main started by JAVA in C:\Users\JAVA\Desktop\Workspace\Spring\chat_demo)
+2023-11-27T15:50:58.549+09:00  INFO 17088 --- [restartedMain] c.example.chat_demo.ChatDemoApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-11-27T15:50:58.578+09:00  INFO 17088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-27T15:50:58.578+09:00  INFO 17088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-27T15:50:58.906+09:00  INFO 17088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-27T15:50:58.918+09:00  INFO 17088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2023-11-27T15:50:59.192+09:00  INFO 17088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-27T15:50:59.196+09:00  INFO 17088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-27T15:50:59.197+09:00  INFO 17088 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-27T15:50:59.224+09:00  INFO 17088 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Chat]   : Initializing Spring embedded WebApplicationContext
+2023-11-27T15:50:59.224+09:00  INFO 17088 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 646 ms
+2023-11-27T15:50:59.309+09:00  INFO 17088 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-27T15:50:59.345+09:00  INFO 17088 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-27T15:50:59.347+09:00  INFO 17088 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-27T15:50:59.519+09:00  INFO 17088 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-27T15:50:59.537+09:00  INFO 17088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-27T15:51:01.315+09:00  INFO 17088 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@707cd654
+2023-11-27T15:51:01.318+09:00  INFO 17088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-27T15:51:01.521+09:00  WARN 17088 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL57Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-11-27T15:51:01.521+09:00  WARN 17088 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-11-27T15:51:01.693+09:00  INFO 17088 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-27T15:51:01.695+09:00  INFO 17088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-27T15:51:01.783+09:00  WARN 17088 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-27T15:51:01.944+09:00  INFO 17088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-27T15:51:01.960+09:00  INFO 17088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Chat'
+2023-11-27T15:51:01.965+09:00  INFO 17088 --- [restartedMain] c.example.chat_demo.ChatDemoApplication  : Started ChatDemoApplication in 3.65 seconds (process running for 3.965)
+2023-11-27T15:51:22.389+09:00  INFO 17088 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/Chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27T15:51:22.390+09:00  INFO 17088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-27T15:51:22.390+09:00  INFO 17088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-27T16:26:23.026+09:00  INFO 17088 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-27T16:26:23.028+09:00  INFO 17088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-27T16:26:24.513+09:00  INFO 17088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
